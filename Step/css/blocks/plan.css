@@ -1,0 +1,185 @@
+.plan {
+    margin-top: 64px;
+    padding: 64px 8px 80px; 
+    background: #DBF3ED;
+}
+
+.plan__wrapper {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.plan__item {
+    margin: 0 auto;
+    width: 359px;
+    padding: 32px;
+    border-radius: 24px;
+    border: 1px solid #0F8277;
+    background: #FDFDFD;
+}
+
+.plan__item-descr {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center; 
+    border-bottom: 2px solid #0F8277;
+}
+
+.plan__item-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+}
+
+.plan__item-text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+}
+
+.plan__item-value {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.plan__item-value span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-transform: uppercase;
+}
+
+.plan__item-btn {
+    padding: 10px 12px;
+    border-radius: 4px;
+    background: #0F8277;
+    color: #F6FDFF;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    border: none;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.plan__item-list {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+}
+
+.plan__item-list li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    position: relative;
+    padding-left: 32px;
+}
+
+.plan__item-list li::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 500px;
+    background-color: #0F8277;
+    background-image: url(../../img/icons/check.svg);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+}
+
+.plan__item-important {
+    background: #0F8277;
+}
+
+
+
+.plan__item-important .plan__item-descr {
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+}
+
+.plan__item-important .plan__item-btn {
+    border: 2px solid #FFF;
+}
+
+.plan__item-important .plan__item-list li{
+    color: #FFF;
+}
+
+.plan__item-important .plan__item-list li::before {
+    background: #FFF;
+    background-image: url(../../img/icons/check_green.svg);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width: 768px) {
+    .plan__wrapper {
+        flex-direction: row;
+        gap: 24px;
+    }
+    
+    .plan__item {
+        width: 232px;
+    }
+
+    .plan__item-descr {
+        height: 318px;
+        gap: 27px;
+    }
+
+    .plan__item:nth-child(1) .plan__item-title {
+        white-space: nowrap;
+    }
+
+    .plan__item-btn {
+        width: fit-content;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .plan__item {
+        padding: 56px;
+        width: 360px;
+    }
+
+    .plan__item-title {
+        font-size: 24px;
+    }
+
+    .plan__item-text {
+        font-size: 16px;
+    }
+
+    .plan__item-value {
+        font-size: 40px;
+    }
+
+    .plan__item-value span {
+        font-size: 16px;
+    }
+
+    .plan__item-btn {
+        font-size: 18px;
+    }
+
+    .plan__item-list li {
+        font-size: 16px;
+    }
+}

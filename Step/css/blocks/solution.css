@@ -1,0 +1,124 @@
+.solution {
+    margin: 64px 8px 0;
+    
+}
+
+.solution__container {
+    display: flex;
+    flex-direction: column;
+     gap: 32px;
+}
+
+.solution__aside {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.solution__text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px ;
+}
+
+.solution__btn {
+    margin: 0 auto;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background: #0F8277;
+    border: none;
+    color: #EEE;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    width: 359px;
+}
+
+.solution__image-wrapper {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 116px);
+    grid-auto-rows: 66px;
+}
+.solution__image {
+    justify-self: center;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.solution__image img{
+    object-fit: contain;
+    width: 90%;
+    height: 60%;
+    
+}
+
+.solution__image:nth-child(1) {
+    border-right: 1px solid #BABABA;
+    border-bottom: 1px solid #BABABA;
+}
+.solution__image:nth-child(2) {
+    border-right: 1px solid #BABABA;
+    border-bottom: 1px solid #BABABA;
+}
+.solution__image:nth-child(3) {
+    border-bottom: 1px solid #BABABA;
+}
+.solution__image:nth-child(4) {
+    border-bottom: 1px solid #BABABA;
+    border-right: 1px solid #BABABA;
+}
+.solution__image:nth-child(5) {
+    border-bottom: 1px solid #BABABA;
+    border-right: 1px solid #BABABA;
+}
+.solution__image:nth-child(6) {
+    border-bottom: 1px solid #BABABA;
+}
+.solution__image:nth-child(7) {
+    border-right: 1px solid #BABABA;
+}
+.solution__image:nth-child(8) {
+    border-right: 1px solid #BABABA;
+}
+
+
+@media (min-width: 768px) {
+    .solution__container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .solution__btn {
+        width: fit-content;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .solution {
+        margin-top: 80px;
+    }
+    .solution__container {
+        gap: 72px;
+    }
+    .solution__text {
+        font-size: 22px;
+    }
+    .solution__btn {
+        font-size: 16px; 
+    }
+
+    .solution__image-wrapper {
+        grid-template-columns: repeat(3, 196px);
+        grid-auto-rows: 136px;
+    }
+
+    .solution__image img {
+        width: 75%;
+        height: 40%;
+    }
+}

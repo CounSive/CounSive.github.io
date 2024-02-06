@@ -1,0 +1,182 @@
+.training {
+    margin: 64px 8px 0;
+}
+
+.training__card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+    align-items: center;
+}
+.training__card-item-link{
+    color:black;
+    text-decoration: none;
+}
+.training__card-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #DADADA;
+}
+
+.training__card-img{
+    width: 100%;
+    height: 278px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+}
+
+.training__card-descr-container {
+    margin: 24px 16px;  
+    width: 327px;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.training__card-location {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+.training__card-item:nth-child(1) .training__card-location {
+    padding-left: 84px;
+}
+
+.training__card-item:nth-child(2) .training__card-location {
+    padding-left: 30px;
+}
+
+.training__card-item:nth-child(3) .training__card-location {
+    padding-left: 58px;
+}
+
+.training__card-item:nth-child(1) .training__card-location::before {
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 20px;
+    background-image: url(../../img/icons/dan-logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.training__card-item:nth-child(2) .training__card-location::before{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 20px;
+    background-image: url(../../img/icons/eu_logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.training__card-item:nth-child(3) .training__card-location::before{
+    content: '';
+    position: absolute;
+    width: 46px;
+    height: 20px;
+    background-image: url(../../img/icons/logo-prjctr.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.training__card-text {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+}
+
+.training__card-link {
+    color: #0F8277;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-decoration: none;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.training__card-link::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../../img/icons/diploma.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+@media (min-width: 768px) {
+    .training__card {
+        flex-direction: row;
+        gap: 24px;
+    }
+    .training__card-item {
+        max-width: 232px;
+    }
+
+    .training__card-img {
+        height: 180px;
+    }
+
+    .training__card-descr-container {
+        width: 200px;
+        gap: unset;
+        justify-content: space-between;
+        min-height: 142px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .training__card {
+        justify-content: center;
+    }
+
+    .training__card-item {
+        max-width: 360px;
+        height: 480px;
+    }
+
+    .training__card-img {
+        height: 278px;
+    }
+
+    .training__card-location{
+        font-size: 16px;
+    }
+
+    .training__card-text{
+        font-size: 24px;
+    }
+
+    .training__card-link {
+        font-size: 16px;
+    }
+
+    .training__card-descr-container {
+        width: 312px;
+        min-height: 162px;
+    }
+}

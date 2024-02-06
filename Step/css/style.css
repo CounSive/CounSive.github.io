@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+@import 'blocks/container.css';
+@import 'blocks/button.css';
+@import 'blocks/header.css';
+@import 'blocks/promo.css';
+@import 'blocks/training.css';
+@import 'blocks/title.css';
+@import 'blocks/courses.css';
+@import 'blocks/topics.css';
+@import 'blocks/cooperate.css';
+@import 'blocks/solution.css';
+@import 'blocks/plan.css';
+@import 'blocks/photo.css';
+@import 'blocks/contact.css';
+@import 'blocks/footer.css';
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+
